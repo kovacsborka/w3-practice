@@ -36,13 +36,13 @@ border-radius: 0;
 /* ------------------- CSS reset end ------------------------ */
 
 div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: auto;
 }
 
 #cube1 {
+    position: fixed;
+    right: 0;
+    bottom: 0;
     width: 400px;
     height: 400px;
     background-color: #001219;
@@ -70,6 +70,9 @@ div {
     width: 320px;
     height: 320px;
     background-color: #e9d8a6;
+    position: fixed;
+    left: 0;
+    top: 0;
 }
 
 #cube6 {
