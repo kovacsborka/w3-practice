@@ -1,56 +1,69 @@
 * {
-margin: 0;
-padding: 0;
-border: 0;
-outline: none;
-box-sizing: border-box;
-background: transparent;
-font-family: inherit;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
 }
 a{
-text-decoration: none;
+    text-decoration: none;
 }
 a img {
-border: none;
+    border: none;
 }
 
 button,
 a {
-cursor: pointer;
-color: inherit;
+    cursor: pointer;
+    color: inherit;
 }
 
 textarea {
-resize: none;
+    resize: none;
 }
 
 button,
 textarea,
 select {
-appearance: none !important;
-border-radius: 0;
+    appearance: none !important;
+    border-radius: 0;
 }
 
 
 
 /* ------------------- CSS reset end ------------------------ */
 
+body {
+    font-family: 'Merriweather', serif;
+}
+
 section {
     min-height: 100vh;
 }
 
-.input  {
+/* .input  {
     border: solid 3px black
-}
+} */
 
 section.image-holder img{
+    position: absolute;
     display: block;
+    z-index: -1;
+    top: 0;
+    right: 0;
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
 
-section.background-holder {
+section.image-holder {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* section.background-holder {
     padding: 20px;
     background-clip: content-box;
     background-image: url("bringa.jpg");
@@ -58,4 +71,105 @@ section.background-holder {
     background-position: center center;
     background-repeat: no-repeat;
     background-color: black;
+} */
+
+#welcome button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 40px 0;
+    background-color: #09CED9;
+    transform: translateX(-50%)
+
+}
+
+#welcome h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    margin: 40px;
+    color: white;
+}
+
+#about {
+    background-color: thistle;
+    min-height: unset;
+}
+
+#about article {
+    width: 100%;
+    max-width: 400px;
+    padding: 80px 20px;
+    margin: 0px auto;
+}
+
+#about h2 {
+    padding-bottom: 20px;
+}
+
+#services {
+    padding: 80px 0;
+    background-image: url(https://images.pexels.com/photos/10260682/pexels-photo-10260682.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-size: cover;
+    background-position: center center;
+}
+
+#services ul {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    margin: 0px auto;
+    list-style: none;
+    background-color: rgb(255, 255, 255, 0.6);
+}
+
+#services ul li {
+    padding-bottom: 10px;
+}
+
+#services ul li h2,
+#services ul li p {
+    text-align: center;
+}
+
+#contact {
+    background-color:rosybrown
+}
+
+#contact form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+#contact input, 
+#contact label {
+    display: block;
+    width: 100%;
+}
+
+#contact label {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+#contact input {
+    height: 60px;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    background-color: white;
+}
+
+#contact button {
+    width: 200px;
+    height: 60px;
+    border-radius: 30px;
+    background-color:rgb(192, 103, 107);
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
