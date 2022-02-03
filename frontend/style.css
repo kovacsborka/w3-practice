@@ -81,7 +81,7 @@ section.image-holder {
     height: 60px;
     border-radius: 30px;
     margin: 40px 0;
-    background-color: #09CED9;
+    background-color: #a1430d ;
     transform: translateX(-50%)
 
 }
@@ -89,12 +89,13 @@ section.image-holder {
 #welcome h1 {
     font-family: 'Raleway', sans-serif;
     font-size: 100px;
-    margin: 40px;
+    margin-top: 100px;
+    margin-left: 100px;
     color: white;
 }
 
 #about {
-    background-color: thistle;
+    background-color: #a85609b7;
     min-height: unset;
 }
 
@@ -111,7 +112,7 @@ section.image-holder {
 
 #services {
     padding: 80px 0;
-    background-image: url(https://images.pexels.com/photos/10260682/pexels-photo-10260682.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+    background-image: url(https://images.pexels.com/photos/5876801/pexels-photo-5876801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
     background-size: cover;
     background-position: center center;
 }
@@ -135,7 +136,7 @@ section.image-holder {
 }
 
 #contact {
-    background-color:rosybrown
+    background-color:#3e4a2cd7
 }
 
 #contact form {
@@ -168,7 +169,7 @@ section.image-holder {
     width: 200px;
     height: 60px;
     border-radius: 30px;
-    background-color:rgb(192, 103, 107);
+    background-color: #504621;
     font-size: 20px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
