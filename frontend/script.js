@@ -38,9 +38,11 @@ function loadEvent(eventObject){
 
     for (const sectionElement of listOfSectionElements) {
         // sectionElement.classList.add("new-class");
-        anchors = anchors + `<a> ${ sectionElement.id } </a>`
+        // anchors = anchors + `<a> ${ sectionElement.id } </a>`
+        anchors += `<a href="#${sectionElement.id}"> ${ sectionElement.id } </a>`;
     }
-    console.log(anchors)
+    console.log(anchors); 
+    rootElement.insertAdjacentHTML("afterbegin", `<header>${ anchors }</header>`)
 
 }
 window.addEventListener("load", loadEvent);
